@@ -1,0 +1,19 @@
+<div class="container">
+      <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Title</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title fro url" ngModel name="title">
+          <small id="emailHelp" class="form-text text-muted">enter the title for URL</small>
+          </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">past the url</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" ngModel name="url"></textarea>
+          </div>
+        
+        <button type="submit" class="btn btn-primary" style="margin-top: 30px;">Submit</button>
+      </form>
+
+</div>

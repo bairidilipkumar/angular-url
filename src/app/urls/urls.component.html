@@ -1,0 +1,29 @@
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">URL Table</h6>
+    </div>
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title of url</th>
+                        <th>Actual URL</th>
+                        <th>Modified URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of userList">
+                        <td>{{user.id}}</td>
+                        <td>{{user.title}}</td>
+                        <td>{{user.url}}</td>
+                        <td>bd.kr/9021{{user.id}}</td>
+                    </tr>
+                    
+                    </tbody>
+
+            </table>
+            </div>
+</div>
